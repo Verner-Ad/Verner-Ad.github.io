@@ -1,8 +1,58 @@
-tr#1 {
+tr#st_1 {
   text-align: center;
   background-color: bisque;
 }
-tr#2 {
+tr#st_2 {
   text-align: center;
   background-color: aqua;
+}
+td#cosp {
+  text-align: center;
+  background-color: aqua;
+}
+table {
+  border: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  text-align: center;
+}
+ul {
+  display: inline-block;
+  text-align: center;
+}
+ol {
+  display: inline-block;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+div {
+  text-align: center;
+}
+nav {
+  background-color: rgb(188, 207, 80);
+  margin-top: 20px;
+}
+footer {
+  margin-top: 10%;  
+  text-align: center;
+  background-color: rgb(168, 84, 58);
+}
+header {
+  font-size: 40pt;
+  font-family: Arial, sans-serif;
+  height: 120px;
+  background-color: rgb(139, 219, 219);
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+img {
+  float: left;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
 }
