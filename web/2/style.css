@@ -21,6 +21,7 @@ table {
 }
 li {
   text-align: center;
+  align-content: center;
 }
 ul {
   display: inline-block;
