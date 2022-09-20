@@ -42,13 +42,13 @@ footer {
   background-color: rgb(168, 84, 58);
 }
 header {
+  height: 120px;
   font-size: 40pt;
   font-family: Arial, sans-serif;
-  height: 120px;
+  background-position: top center;
   background-color: rgb(139, 219, 219);
   margin: 0;
-  background-position: top center;
-  text-align: center;
+  border: 2px solid black;
 }
 img {
   float: left;
