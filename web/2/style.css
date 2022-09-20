@@ -23,14 +23,7 @@ li {
   text-align: center;
   align-content: center;
 }
-ul {
-  display: inline-block;
-  text-align: center;
-}
-ol {
-  display: inline-block;
-  text-align: center;
-}
+
 p {
   text-align: center;
 }
