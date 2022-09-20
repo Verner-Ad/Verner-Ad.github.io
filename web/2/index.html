@@ -87,9 +87,17 @@
             <p>Контекстная <a href="http://example.com">ссылка</a> в тексте абзаца</p>
         </li>
         <li>Ссылка-изображение<br>
-            <a href="http://example.com"><img src="image.jpg" width="224" height="168"
+            <a href="http://example.com"><img src="image.jpg" width="224" height="224"
                     alt="Описание картинки"></a>
         </li>
+        <li>
+            Ссылки из прямоугольных и круглых областей картинки<br>
+             <img src="image.jpg" width="224" height="224" alt="Описание картинки" usemap="#mymap">
+             <map name="mymap">
+                <area shape="rect" coords="40,25,90,150" href="http://example.com" alt="Прямоугольная область">
+                <area shape="circle" coords="100,210,25" href="http://example.com" alt="Круглая область">
+             </map>
+         </li>
         <li>
             <a href="page">Относительная ссылка на страницу в текущем каталоге</a>
         </li>
@@ -189,7 +197,7 @@
         <label>
             Сверхспособности:
             <br>
-            <select multiple="multiple">
+            <select multiple="multiple" name="name[]">
               <option value="Значение1">Бессмертие</option>
               <option value="Значение2">Прохождение сквозь стены</option>
               <option value="Значение3">Левитация</option>
