@@ -47,6 +47,7 @@ header {
   background-position: top center;
   background-color: rgb(139, 219, 219);
   margin: 0;
+  height: 120px;
 }
 img {
   float: left;
