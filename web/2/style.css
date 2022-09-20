@@ -47,6 +47,7 @@ header {
   height: 120px;
   background-color: rgb(139, 219, 219);
   margin: 0;
+  background-position: top center;
   text-align: center;
 }
 img {
