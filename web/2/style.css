@@ -46,7 +46,7 @@ header {
   font-family: Arial, sans-serif;
   height: 120px;
   background-color: rgb(139, 219, 219);
-  margin: auto;
+  margin: 0;
   text-align: center;
   padding: 40px;
 }
