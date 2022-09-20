@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 tr#st_1 {
   text-align: center;
@@ -46,7 +47,6 @@ footer {
 }
 header {
   font-size: 40pt;
-  font-family: Arial, sans-serif;
   background-position: top center;
   background-color: rgb(139, 219, 219);
   margin: 0;
