@@ -20,15 +20,15 @@ table {
   margin-right: auto;
 }
 li {
-  text-align: center;
+
   align-content: center;
 }
 
 p {
   text-align: center;
 }
-div {
-  text-align: center;
+div#st {
+  margin: 0 auto;
 }
 nav {
   background-color: rgb(188, 207, 80);
