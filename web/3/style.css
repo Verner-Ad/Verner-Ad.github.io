@@ -67,6 +67,7 @@ div#doc {
 }
 
 #main-aside-wrapper {
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
