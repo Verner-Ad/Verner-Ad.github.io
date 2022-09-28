@@ -20,7 +20,13 @@ text-align: center;
 background-color: aqua;
 }
 
+div#xcv {
+ display:flex ;
+  flex-direction:row;
+}
+
 table {
+  order: 2;
 border: 2px;
 width: 40%;
 height: 500px;
@@ -67,7 +73,9 @@ margin-right: 2%;
 width: 100px;
 height: 100px;
 }
-
+form {
+  order:1;
+}
 div#doc {
 text-align: center;
 padding-top: 40px;
@@ -80,6 +88,19 @@ flex-direction: row;
 body {
 background-color: aquamarine;
 font-size: 10;
+}
+  form {
+  order:2;
+  }
+  table {
+    order:1;
+border: 2px;
+width: 40%;
+height: 500px;
+  }
+ div#xcv {
+ display:flex ;
+  flex-direction:column;
 }
 }
 
