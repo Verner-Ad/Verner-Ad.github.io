@@ -27,7 +27,7 @@ div#xcv {
 
 div#ord{
  display:flex;
- flex-direction:row;
+ flex-direction:column;
 }
 table {
   order: 2;
@@ -108,7 +108,7 @@ height: 500px;
 }
  div#ord{
  display:flex;
- flex-direction:row;
+ flex-direction:column;
 }
 }
 
