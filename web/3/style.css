@@ -25,6 +25,9 @@ div#xcv {
   flex-direction:row;
 }
 
+div#ord{
+ display:flex;
+}
 table {
   order: 2;
 border: 2px;
