@@ -27,6 +27,7 @@ div#xcv {
 
 div#ord{
  display:flex;
+ flex-direction:row;
 }
 table {
   order: 2;
@@ -104,6 +105,10 @@ height: 500px;
  div#xcv {
  display:flex ;
   flex-direction:column;
+}
+ div#ord{
+ display:flex;
+ flex-direction:row;
 }
 }
 
