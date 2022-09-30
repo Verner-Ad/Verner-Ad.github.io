@@ -1,87 +1,128 @@
 * {
-  font-family: Arial, sans-serif;
-  margin: 0;
+font-family: Arial, sans-serif;
+margin: 0;
 }
 
 tr#st_1 {
-  text-align: center;
-  background-color: bisque;
+text-align: center;
+background-color: bisque;
+font-size: 160%;
 }
 
 tr#st_2 {
-  text-align: center;
-  background-color: aqua;
+text-align: center;
+background-color: aqua;
+font-size: 160%;
 }
 
 td#cosp {
-  text-align: center;
-  background-color: aqua;
+text-align: center;
+background-color: aqua;
 }
 
+div#xcv {
+ display:flex ;
+  flex-direction:row;
+}
+
+div#ord{
+ display:flex;
+ flex-direction:column;
+}
 table {
-  border: 2px;
+  order: 2;
+border: 2px;
+width: 40%;
+height: 500px;
 }
 
 div {
-  margin: 0 auto;
-  max-width: 960px;
+margin: 0 auto;
+max-width: 960px;
+font-size: 80%;
+}
+div#st{
+margin: 0 auto;
+max-width: 960px;
+font-size: 80%;
 }
 
 nav {
-  background-color: rgb(188, 207, 80);
-  margin-top: 20px;
-  padding: 20px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-  text-align: center;
+background-color: rgb(188, 207, 80);
+margin-top: 20px;
+padding: 20px;
+margin-left: 0 auto;
+margin-right: 0 auto;
+text-align: center;
 }
 
 footer {
-  margin-top: 10%;
-  text-align: center;
-  background-color: rgb(168, 84, 58);
+margin-top: 10%;
+text-align: center;
+background-color: rgb(168, 84, 58);
 }
 
 header {
-  font-size: 40pt;
-  background-position: top center;
-  background-color: rgb(139, 219, 219);
-  margin: 0;
-  height: 120px;
+font-size: 40pt;
+background-position: top center;
+background-color: rgb(139, 219, 219);
+margin: 0;
+height: 120px;
 }
 
 img#st {
-  float: left;
-  margin-top: 10px;
-  margin-right: 2%;
-  width: 100px;
-  height: 100px;
+float: left;
+margin-top: 10px;
+margin-right: 2%;
+width: 100px;
+height: 100px;
 }
-
+form {
+  order:1;
+}
 div#doc {
-  text-align: center;
+text-align: center;
+padding-top: 40px;
 }
 
 @media screen and (min-width: 800px) {
-  #main-aside-wrapper {
-    flex-direction: row;
+#main-aside-wrapper {
+flex-direction: row;
+}
+body {
+background-color: aquamarine;
+font-size: 10;
+}
+  form {
+  order:2;
   }
-  body {
-    background-color: aquamarine;
+  table {
+    order:1;
+border: 2px;
+width: 40%;
+height: 500px;
   }
+ div#xcv {
+ display:flex ;
+  flex-direction:column;
+}
+ div#ord{
+ display:flex;
+ flex-direction:column;
+}
 }
 
 #main-aside-wrapper {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 #main-aside-wrapper aside {
-  flex: 1;
-  order: 1;
+flex: 1;
+order: 1;
 }
 
 #main-aside-wrapper main {
-  flex: 3;
-  order: 2;
+flex: 3;
+order: 2;
 }
