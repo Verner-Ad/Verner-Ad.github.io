@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr#st_1 {
+    text-align: center;
+    background-color: bisque;
+}
+
+tr#st_2 {
+    text-align: center;
+    background-color: aqua;
+}
+
+td#cosp {
+    text-align: center;
+    background-color: aqua;
+}
+
+table {
+    display: flex;
+    border: 2px;
+    border-color: rgb(80, 122, 0);
+    border-radius: 35 px;
+  }
+
+  div#mid {
+    margin:0 auto;
+    max-width:960 px;
+    border: 2px;
+    border-color: rgb(80, 122, 0);
+    border-radius: 35 px;
+    background-color: rgb(144, 216, 9);
+  }
+  
