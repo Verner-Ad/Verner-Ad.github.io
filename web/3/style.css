@@ -19,11 +19,11 @@ td#cosp {
 text-align: center;
 background-color: aqua;
 }
-
+/*
 div#xcv {
  display:flex ;
   flex-direction:row;
-}
+}*/
 
 div#ord{
  display:flex;
@@ -36,11 +36,6 @@ width: 40%;
 height: 500px;
 }
 
-div {
-margin: 0 auto;
-max-width: 960px;
-font-size: 80%;
-}
 div#st{
 margin: 0 auto;
 max-width: 960px;
@@ -110,19 +105,5 @@ height: 500px;
  display:flex;
  flex-direction:column;
 }
-}
 
-#main-aside-wrapper {
-display: flex;
-flex-direction: column;
-}
-
-#main-aside-wrapper aside {
-flex: 1;
-order: 1;
-}
-
-#main-aside-wrapper main {
-flex: 3;
-order: 2;
 }
