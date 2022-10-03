@@ -19,7 +19,7 @@ td#cosp {
     background-color: aqua;
 }
 
-/* Таблица */
+/* Таблица с закругленной рамкой рамкой */
 
 table {
     border: 2px;
@@ -27,6 +27,7 @@ table {
     border-radius: 35 px;
 }
 
+/* Навигация в колонку */
 
 nav {
     margin: 0;
@@ -38,7 +39,7 @@ a#nav {
     display: block;
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:800px) {
 
 
     div#mid {
