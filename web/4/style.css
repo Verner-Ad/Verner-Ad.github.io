@@ -76,11 +76,6 @@ img#st {
     height: 100px;
 }
 
-div#doc {
-    text-align: center;
-    padding-top: 40px;
-}
-
 div#ord {
     display: flex;
     flex-direction: column;
@@ -89,6 +84,14 @@ div#ord {
 div#xcv {
     display: flex;
     flex-direction: row;
+}
+div#mid {
+    margin: 0 auto;
+    border: 2px;
+    border-color: rgb(80, 122, 0);
+    border-radius: 35 px;
+    background-color: rgb(144, 216, 9);
+    font-size: 80%;
 }
 
 @media screen and (min-width:800px) {
@@ -125,4 +128,8 @@ div#xcv {
         flex-direction: column;
     }
 
+    div#doc {
+        text-align: center;
+        padding-top: 40px;
+    }    
 }
