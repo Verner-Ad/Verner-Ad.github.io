@@ -2,26 +2,34 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-5.0..slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header>
-        <div>
-            <img id="st" width="100px" heigth="100px" src="image.jpg">
-            <div id="doc"> Plague Doc</div>
-        </div>
-    </header>
+    <div class="container m-auto">
+        <header class="p-1">
+            <img class="float-left" width="100px" heigth="100px" src="image.jpg">
+            <h1 class="text-center p-4">Plague Doc </h1>
+        </header>
+    </div>
+    <hr>
 
-    <div id="st">
-        <nav>
-            <p> Меню ссылок</p>
-            <div id="xcv">
-                <a href="#contacts" style="display:block;"> Контакты</a> <a>|</a>
-                <a href="#table" style="display:block;"> Таблица</a> <a>|</a>
-                <a href="#form" style="display:block;"> Форма</a> <a>|</a>
+    <div class="container">
+        <nav class="d-flex flex-row">
+            <div class="col-md-12 px-md-5 bg-info">
+                <div class="d-flex flex-column flex-md-row p-2">
+                    <a  style="color:blanchedalmond" href="#contacts"> Контакты   </a>
+                    <a style="color:blanchedalmond" href="#table"> Таблица   </a>
+                    <a style="color:blanchedalmond" href="#form"> Форма   </a>
+                </div>
             </div>
         </nav>
+
         <a name="head_1">Список ссылок</a>
         <ol>
             <li>
@@ -50,7 +58,8 @@
                 Список ссылок основной навигации сайта с подписями title
                 <ul>
                     <li>
-                        <a href="#head_1" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a>
+                        <a href="#head_1" title="Нумерованный список гиперссылок">Нумерованный список
+                            гиперссылок</a>
                     </li>
                     <li>
                         <a href="#head_2" title="Форма">Форма</a>
@@ -107,109 +116,112 @@
                 <a href="/catalog/page">Сокращенная ссылка на внутреннюю</a>
             </li>
         </ol>
-        <div id="ord">
-            <table>
-                <tbody>
-                    <tr id="st_1">
-                        <th> текст 11</td>
-                        <th> текст 12</td>
-                        <th> текст 13</td>
-                    </tr id="st_2">
-                    <tr>
-                        <td id="cosp" colspan="3"> текст 21</td>
-                    </tr>
-                    <tr id="st_1">
-                        <td> текст 31</td>
-                        <td> текст 32</td>
-                        <td> текст 33</td>
-                    </tr>
-                    <tr id="st_2">
-                        <td> текст 41</td>
-                        <td> текст 42</td>
-                        <td> текст 43</td>
-                    </tr>
-                    <tr id="st_1">
-                        <td> текст 51</td>
-                        <td> текст 52</td>
-                        <td> текст 53</td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <form>
-                <a name="head_1">
-                    <h2>Форма</h2>
-                </a>
-                <label> Имя <br>
-                    <input placeholder="Введите имя">
-                </label>
-                <br>
-                <label>
-                    Е-mail:<br>
-                    <input type="email" placeholder="Введите вашу почту">
-                </label>
-                <br>
-                <label>
-                    Дата рождения:<br>
-                    <input type="date">
-                </label>
-                <p> Пол:</p>
-                <label>
-                    <input type="radio" value="значение1" name="группа_1">
-                    М
-                </label>
-                <label>
-                    <input type="radio" value="значение2" name="группа_1">
-                    Ж
-                </label>
-                <br>
-                <p> Количество конечностей:</p>
-                <label>
-                    <input type="radio" value="значение2" name="группа_2">
-                    1
-                </label> <br>
-                <label>
-                    <input type="radio" value="значение2" name="группа_2">
-                    2
-                </label> <br>
-                <label>
-                    <input type="radio" value="значение2" name="группа_2">
-                    3
-                </label> <br>
-                <label>
-                    <input type="radio" value="значение2" name="группа_2">
-                    4
-                </label> <br>
-                <label>
-                    <input type="radio" value="значение2" name="группа_2">
-                    5
-                </label> <br>
-                <label>
-                    Сверхспособности:
-                    <br>
-                    <select multiple="multiple" name="name[]">
-                        <option value="Значение1">Бессмертие</option>
-                        <option value="Значение2">Прохождение сквозь стены</option>
-                        <option value="Значение3">Левитация</option>
-                    </select>
-                </label> <br>
-                <label>
-                    Биография: <br>
-                    <textarea placeholder="Введите текст"></textarea>
-                </label> <br>
-                <label>
-                    <input type="checkbox">
-                    С контрактом ознакомлен(а)
-                </label> <br>
-                <label>
-                    Кнопка "отправить" <br>
-                    <input type="submit" value="Отправить">
-                </label>
 
-            </form>
-        </div>
+        <table>
+            <tbody>
+                <tr id="st_1">
+                    <th> текст 11</td>
+                    <th> текст 12</td>
+                    <th> текст 13</td>
+                </tr id="st_2">
+                <tr>
+                    <td id="cosp" colspan="3"> текст 21</td>
+                </tr>
+                <tr id="st_1">
+                    <td> текст 31</td>
+                    <td> текст 32</td>
+                    <td> текст 33</td>
+                </tr>
+                <tr id="st_2">
+                    <td> текст 41</td>
+                    <td> текст 42</td>
+                    <td> текст 43</td>
+                </tr>
+                <tr id="st_1">
+                    <td> текст 51</td>
+                    <td> текст 52</td>
+                    <td> текст 53</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <a name="head_1">
+                <h2>Форма</h2>
+            </a>
+            <label> Имя <br>
+                <input placeholder="Введите имя">
+            </label>
+            <br>
+            <label>
+                Е-mail:<br>
+                <input type="email" placeholder="Введите вашу почту">
+            </label>
+            <br>
+            <label>
+                Дата рождения:<br>
+                <input type="date">
+            </label>
+            <p> Пол:</p>
+            <label>
+                <input type="radio" value="значение1" name="группа_1">
+                М
+            </label>
+            <label>
+                <input type="radio" value="значение2" name="группа_1">
+                Ж
+            </label>
+            <br>
+            <p> Количество конечностей:</p>
+            <label>
+                <input type="radio" value="значение2" name="группа_2">
+                1
+            </label> <br>
+            <label>
+                <input type="radio" value="значение2" name="группа_2">
+                2
+            </label> <br>
+            <label>
+                <input type="radio" value="значение2" name="группа_2">
+                3
+            </label> <br>
+            <label>
+                <input type="radio" value="значение2" name="группа_2">
+                4
+            </label> <br>
+            <label>
+                <input type="radio" value="значение2" name="группа_2">
+                5
+            </label> <br>
+            <label>
+                Сверхспособности:
+                <br>
+                <select multiple="multiple" name="name[]">
+                    <option value="Значение1">Бессмертие</option>
+                    <option value="Значение2">Прохождение сквозь стены</option>
+                    <option value="Значение3">Левитация</option>
+                </select>
+            </label> <br>
+            <label>
+                Биография: <br>
+                <textarea placeholder="Введите текст"></textarea>
+            </label> <br>
+            <label>
+                <input type="checkbox">
+                С контрактом ознакомлен(а)
+            </label> <br>
+            <label>
+                Кнопка "отправить" <br>
+                <input type="submit" value="Отправить">
+            </label>
+
+        </form>
+
     </div>
     <footer> AP projects</footer>
 </body>
+</div>
+</div>
 
 </html>
