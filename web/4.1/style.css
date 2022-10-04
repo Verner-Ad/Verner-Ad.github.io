@@ -1,0 +1,141 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    font-size: 40pt;
+    background-position: top center;
+    background-color: rgb(139, 219, 219);
+    margin: 0;
+    height: 120px;
+}
+
+div#doc {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Навигация в колонку */
+
+nav {
+    background-color: rgb(188, 207, 80);
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+a#nav {
+    display: block;
+}
+
+/* Таблица с закругленной рамкой */
+
+div#tbl {
+    border: 2px solid rgb(80, 122, 0);
+    border-radius: 35 px;
+}
+
+table {
+    /*order: 2;*/
+    border: 2px solid rgb(80, 122, 0);
+    width: 40%;
+    height: 500px;
+}
+
+/* Таблица текстом по центру, с разными цветами строк */
+
+tr#st_1 {
+    text-align: center;
+    background-color: bisque;
+}
+
+tr#st_2 {
+    text-align: center;
+    background-color: aqua;
+}
+
+td#cosp {
+    text-align: center;
+    background-color: aqua;
+}
+
+form {
+    order: 1;
+}
+
+footer {
+    margin-top: 10%;
+    text-align: center;
+    background-color: rgb(168, 84, 58);
+}
+
+img#st {
+    float: left;
+    margin-top: 10px;
+    margin-right: 2%;
+    width: 100px;
+    height: 100px;
+}
+
+div#ord {
+    display: flex;
+    flex-direction: column;
+}
+
+div#xcv {
+    display: flex;
+    flex-direction: row;
+}
+div#mid {
+    margin: 0 auto;
+    border: 2px;
+    border-color: rgb(80, 122, 0);
+    border-radius: 35 px;
+    background-color: rgb(144, 216, 9);
+    font-size: 80%;
+}
+
+@media screen and (min-width:800px) {
+
+
+    div#mid {
+        margin: 0 auto;
+        max-width: 960 px;
+        border: 2px;
+        border-color: rgb(80, 122, 0);
+        border-radius: 35 px;
+        background-color: rgb(144, 216, 9);
+        font-size: 80%;
+    }
+
+    form {
+        order: 2;
+    }
+
+    table {
+        order: 1;
+        border: 2px;
+        width: 40%;
+        height: 500px;
+    }
+
+    div#xcv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#ord {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div#doc {
+        text-align: center;
+        padding-top: 40px;
+    }    
+}
