@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-5.0..slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="container m-auto">
+        <header class="p-1">
+            <img class="float-left" width="100px" heigth="100px" src="image.jpg">
+            <h1 class="text-center p-4">Plague Doc </h1>
+        </header>
+    </div>
+    <hr>
+
+    <div class="container-fluid m-auto p-0">
+        <nav class="d-flex flex-row">
+            <div class="col-md-12 px-md-12  bg-info">
+                <div class="d-flex flex-column flex-md-row p-2">
+                    <a style="color:blanchedalmond" href="#contacts"> Контакты </a>
+                    <p> -------------</p>
+                    <a style="color:blanchedalmond" href="#table"> Таблица </a>
+                    <p> -------------</p>
+                    <a style="color:blanchedalmond" href="#form"> Форма </a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <a name="head_1">Список ссылок</a>
+            <ol>
+                <li>
+                    <a href="http://example.com/">Абсолютная гиперссылка на главную страницу сайта</a>
+                </li>
+                <li>
+                    <a href="https://example.com/">Абсолютная на главную сайта в протоколе https</a>
+                </li>
+                <li>
+                    <a href="ftp://example.com/files.txt">Ссылка на файл на сервере FTP без авторизации</a>
+                </li>
+                <li>
+                    <a href="ftp://user:203@2example.com/files.txt">Ссылку на файл на сервере FTP с авторизацией</a>
+                </li>
+
+                <li>
+                    <a href="http://example.com/#top">Ссылка на фрагмент страницы некоторого сайта</a>
+                </li>
+                <li>
+                    <a href="#top">Ссылка на фрагмент текущей страницы</a>
+                </li>
+                <li>
+                    <a href="http://example.com?parameter1=p1&parameter2=p2">Ссылка с двумя параметрами в URL</a>
+                </li>
+                <li>
+                    Список ссылок основной навигации сайта с подписями title
+                    <ul>
+                        <li>
+                            <a href="#head_1" title="Нумерованный список гиперссылок">Нумерованный список
+                                гиперссылок</a>
+                        </li>
+                        <li>
+                            <a href="#head_2" title="Форма">Форма</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>Ссылка без href</a>
+                </li>
+                <li>
+                    <a href="">Ссылка с пустым href</a>
+                </li>
+                <li>
+                    <a href="http://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+                </li>
+                <li>
+                    <a href="http://example.com" rel="nofollow">
+                        <!--noindex-->Ссылка, запрещенная для индексации поисковиками
+                        <!--/noindex-->
+                    </a>
+                </li>
+                <li>
+                    <p>Контекстная <a href="http://example.com">ссылка</a> в тексте абзаца</p>
+                </li>
+                <li>Ссылка-изображение<br>
+                    <a href="http://example.com"><img src="image.jpg" width="224" height="224"
+                            alt="Описание картинки"></a>
+                </li>
+                <li>
+                    Ссылки из прямоугольных и круглых областей картинки<br>
+                    <img src="image.jpg" width="320" height="320" alt="Описание картинки" usemap="#mymap">
+                    <map name="mymap">
+                        <area shape="rect" coords="40,25,90,150" href="http://example.com" alt="Прямоугольная область">
+                        <area shape="circle" coords="100,210,25" href="http://example.com" alt="Круглая область">
+                    </map>
+                </li>
+                <li>
+                    <a href="page">Относительная ссылка на страницу в текущем каталоге</a>
+                </li>
+                <li>
+                    <a href="/about/page">Относительная ссылка на страницу в каталоге about</a>
+                </li>
+                <li>
+                    <a href="../page">Относительная ссылка на страницу в каталоге уровнем выше
+                        текущего</a>
+                </li>
+                <li>
+                    <a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями
+                        выше текущего</a>
+                </li>
+                <li>
+                    <a href="/">Сокращенная ссылка на главную</a>
+                </li>
+                <li>
+                    <a href="/catalog/page">Сокращенная ссылка на внутреннюю</a>
+                </li>
+            </ol>
+            <div class="d-flex flex-column-reverse flex-sm-column">
+                <table class="table table-bordered mb-">
+
+                    <table>
+                        <tbody>
+                            <tr style="background-color: aqua;">
+                                <th> текст 11</td>
+                                <th> текст 12</td>
+                                <th> текст 13</td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: bisque;" colspan="3"> текст 21</td>
+                            </tr>
+                            <tr style="background-color: aqua;">
+                                <td> текст 31</td>
+                                <td> текст 32</td>
+                                <td> текст 33</td>
+                            </tr>
+                            <tr style="background-color: bisque;">
+                                <td> текст 41</td>
+                                <td> текст 42</td>
+                                <td> текст 43</td>
+                            </tr>
+                            <tr style="background-color: aqua;">
+                                <td> текст 51</td>
+                                <td> текст 52</td>
+                                <td> текст 53</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <form>
+                        <a name="head_1">
+                            <h2>Форма</h2>
+                        </a>
+                        <label> Имя <br>
+                            <input placeholder="Введите имя">
+                        </label>
+                        <br>
+                        <label>
+                            Е-mail:<br>
+                            <input type="email" placeholder="Введите вашу почту">
+                        </label>
+                        <br>
+                        <label>
+                            Дата рождения:<br>
+                            <input type="date">
+                        </label>
+                        <p> Пол:</p>
+                        <label>
+                            <input type="radio" value="значение1" name="группа_1">
+                            М
+                        </label>
+                        <label>
+                            <input type="radio" value="значение2" name="группа_1">
+                            Ж
+                        </label>
+                        <br>
+                        <p> Количество конечностей:</p>
+                        <label>
+                            <input type="radio" value="значение2" name="группа_2">
+                            1
+                        </label> <br>
+                        <label>
+                            <input type="radio" value="значение2" name="группа_2">
+                            2
+                        </label> <br>
+                        <label>
+                            <input type="radio" value="значение2" name="группа_2">
+                            3
+                        </label> <br>
+                        <label>
+                            <input type="radio" value="значение2" name="группа_2">
+                            4
+                        </label> <br>
+                        <label>
+                            <input type="radio" value="значение2" name="группа_2">
+                            5
+                        </label> <br>
+                        <label>
+                            Сверхспособности:
+                            <br>
+                            <select multiple="multiple" name="name[]">
+                                <option value="Значение1">Бессмертие</option>
+                                <option value="Значение2">Прохождение сквозь стены</option>
+                                <option value="Значение3">Левитация</option>
+                            </select>
+                        </label> <br>
+                        <label>
+                            Биография: <br>
+                            <textarea placeholder="Введите текст"></textarea>
+                        </label> <br>
+                        <label>
+                            <input type="checkbox">
+                            С контрактом ознакомлен(а)
+                        </label> <br>
+                        <label>
+                            Кнопка "отправить" <br>
+                            <input type="submit" value="Отправить">
+                        </label>
+
+                    </form>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center"> AP projects</footer>
+</body>
+</div>
+</div>
+
+</html>
