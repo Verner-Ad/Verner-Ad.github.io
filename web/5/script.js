@@ -12,7 +12,7 @@ function calc() {
     let a3 = form.elements.price3;
     let b3 = form.elements.count3;
     let result = document.getElementById("result");
-    let r = a.value * b.value + a0.value * b0.value + a1.value * b1.value + a2.value * b2.value + a3.value * b3.value + a4.value * b4.value + a5.value * b5.value;
+    let r = a.value * b.value + a0.value * b0.value + a1.value * b1.value + a2.value * b2.value + a3.value * b3.value;
     if(isNaN(r)) {
         result.innerHTML = "It isn't numbers";
     }
