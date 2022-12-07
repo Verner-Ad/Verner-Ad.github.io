@@ -7,6 +7,13 @@ h1 {
     font-size: 30px;
     color: greenyellow;
 }
+body {
+    background-color:black;
+    color:white;
+}
+input {
+    background-color:greenyellow;
+}
 button {
     background-color: greenyellow;
 }
