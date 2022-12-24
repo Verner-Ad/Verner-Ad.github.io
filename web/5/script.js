@@ -12,7 +12,6 @@ function calc() {
     let b2 = form.elements.count2;
     let a3 = form.elements.price3;
     let b3 = form.elements.count3;
-    let result = document.getElementById("result");
     let r = a.value * b.value + a0.value * b0.value + a1.value * b1.value + a2.value * b2.value + a3.value * b3.value;
 let test=true;
   if (a0.value<0||a1.value<0||a2.value<0||a3.value<0||a.value<0||b0.value<0||b1.value<0||b2.value<0||b3.value<0||b.value<0) test=false;
