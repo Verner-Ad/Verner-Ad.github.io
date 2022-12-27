@@ -28,7 +28,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: "10%",
-        autoplaySpeed: 3000,
+        autoplaySpeed: 100,
         responsive: [{
             breakpoint: 1024,
             settings: {
