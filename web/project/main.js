@@ -25,10 +25,10 @@ $(document).ready(function () {
         arrows: false,
         autoplay: true,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         centerMode: true,
         centerPadding: "10%",
-        autoplaySpeed: 100,
+        autoplaySpeed: 3000,
         responsive: [{
             breakpoint: 1024,
             settings: {
