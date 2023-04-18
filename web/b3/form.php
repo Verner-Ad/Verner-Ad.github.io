@@ -26,13 +26,13 @@ if (!isset($_POST['gender']) || ($_POST['gender'] != 0 && $_POST['gender'] != 1)
     header("HTTP/1.1 400 Gender is not set or is invalid");
     exit();
 }
-$user = 'u53004';
-$pass = '1535364';
+$user = 'u53297';
+$pass = '1541109';
 // экземпляр класса PHP Data Objects для взаимодействия с бд
 // :: - scope resolution operator, обратиться к полю класса
 // в кач-ве значения он должен быть true для постоянного соединения с бд
 // => исп-тся для задания значений массива []
-$db = new PDO('mysql:host=localhost;dbname=u53004', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
+$db = new PDO('mysql:host=localhost;dbname=u53297', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
 
 try {
     // вызываем (-> - аналог . в Java для доступа к полям и методам класса)
