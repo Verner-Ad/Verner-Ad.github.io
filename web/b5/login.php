@@ -54,7 +54,7 @@ else {
 
     $user = 'u53297';
     $pass = '1541109';
-    $db = new PDO('mysql:host=localhost;dbname=u53012', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
+    $db = new PDO('mysql:host=localhost;dbname=u53297', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
     $stmt = $db->prepare("SELECT * FROM Person WHERE p_login = :p_login && p_pass = :p_pass;");
     $stmtErr = $stmt->execute(['p_login' => $_POST['login'], 'p_pass' => hash("adler32",$_POST['pass'])]);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
