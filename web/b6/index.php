@@ -113,9 +113,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     include('form.php');
 } // Иначе, если запрос был методом POST, т.е. нужно проверить данные и сохранить их в XML-файл.
 else {
-    $user = 'u53004';
-    $pass = '1535364';
-    $db = new PDO('mysql:host=localhost;dbname=u53004', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
+    $user = 'u53297';
+    $pass = '1541109';
+    $db = new PDO('mysql:host=localhost;dbname=u53297', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
     // Проверяем ошибки.
     $errors = FALSE;
     // / / - начало и конец регулярки
