@@ -123,11 +123,7 @@ else {
     foreach ($abilities as $ability) {
         setcookie($ability['a_name'].'_value', '', 100000);
     }
-    /*
-    setcookie('Invincibility_value', '', 100000);
-    setcookie('Noclip_value', '', 100000);
-    setcookie('Levitation_value', '', 100000);
-    */
+    
     if (isset($_POST['powers'])) {
         foreach ($_POST['powers'] as $item) {
             foreach ($abilities as $ability) {
@@ -136,19 +132,7 @@ else {
                     break;
                 }
             }
-            /*
-            switch ($item) {
-                case "Invincibility":
-                    setcookie('Invincibility_value', '1', time() + 30 * 24 * 60 * 60);
-                    break;
-                case "Noclip":
-                    setcookie('Noclip_value', '1', time() + 30 * 24 * 60 * 60);
-                    break;
-                case "Levitation":
-                    setcookie('Levitation_value', '1', time() + 30 * 24 * 60 * 60);
-                    break;
-            }
-            */
+           
         }
     }
     setcookie('biography_value', $_POST['biography'], time() + 30 * 24 * 60 * 60);
@@ -191,22 +175,7 @@ else {
                         break;
                     }
                 }
-                /*
-                switch ($item) {
-                    case "Invincibility":
-                        $stmt = $db->prepare("INSERT INTO Person_Ability (p_id, a_id) VALUES (:p_id, :a_id);");
-                        $stmtErr = $stmt->execute(['p_id' => intval($strId), 'a_id' => 1]);
-                        break;
-                    case "Noclip":
-                        $stmt = $db->prepare("INSERT INTO Person_Ability (p_id, a_id) VALUES (:p_id, :a_id);");
-                        $stmtErr = $stmt->execute(['p_id' => intval($strId), 'a_id' => 3]);
-                        break;
-                    case "Levitation":
-                        $stmt = $db->prepare("INSERT INTO Person_Ability (p_id, a_id) VALUES (:p_id, :a_id);");
-                        $stmtErr = $stmt->execute(['p_id' => intval($strId), 'a_id' => 2]);
-                        break;
-                }
-                */
+                
                 if (!$stmtErr) {
                     header("HTTP/1.1 500 Some server issue");
                     exit();
