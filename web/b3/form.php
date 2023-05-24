@@ -5,36 +5,36 @@ string error ='';
 if (empty($_POST['name'])) {
     // создаем HTTP header
     if (error == '')
-    error+="Name is not set\n";
-    else
     error+="HTTP/1.1 400 Name is not set\n";
+    else
+    error+="Name is not set\n";
     // exit() завершает выполнение скрипта
 }
 // встроенная в php функция для валидации email
 if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
     if (error == '')
-    error += "Mail is not set or is invalid\n";
+ error += "HTTP/1.1 400 Mail is not set or is invalid\n";
     else
-    error += "HTTP/1.1 400 Mail is not set or is invalid\n";
+       error += "Mail is not set or is invalid\n";
 }
 if (empty($_POST['year'])) {
     if (error == '')
-    error+="Year is not set\n";
+     error+="HTTP/1.1 400 Year is not set\n";
     else
-    error+="HTTP/1.1 400 Year is not set\n";
+   error+="Year is not set\n";
 }
 if (empty($_POST['limbs'])) {
     if (error == '')
-    error+= "Limbs number is not set\n";
-    else
     error+= "HTTP/1.1 400 Limbs number is not set\n";
+    else 
+   error+= "Limbs number is not set\n";
 }
 // здесь применяем isset (проверка на NULL), т.к. empty выдаст true на '0', а у нас gender = {0, 1}
 if (!isset($_POST['gender']) || ($_POST['gender'] != 0 && $_POST['gender'] != 1)) {
     if (error == '')
-    error+="Gender is not set or is invalid\n";
-    else
     error+="HTTP/1.1 400 Gender is not set or is invalid\n";
+    else
+    error+="Gender is not set or is invalid\n";
 }
 header(error);
 exit();
