@@ -4,26 +4,29 @@ $error ="";
 // $_POST - один из суперглобальных массивов, инициализирован всегда
 if (empty($_POST['name'])) {
     // создаем HTTP header
-    $error+="Name is not set\n";
+    $error=$error . "Name is not set\n";
     // exit() завершает выполнение скрипта
 }
 // встроенная в php функция для валидации email
 if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-       $error += "Mail is not set or is invalid\n";
+       $error = $error . "Mail is not set or is invalid\n";
 }
 if (empty($_POST['year'])) {
-   $error+="Year is not set\n";
+   $error=$error . "Year is not set\n";
 }
 if (empty($_POST['limbs'])) {
-   $error+= "Limbs number is not set\n";
+   $error=$error . "Limbs number is not set\n";
 }
 // здесь применяем isset (проверка на NULL), т.к. empty выдаст true на '0', а у нас gender = {0, 1}
 if (!isset($_POST['gender']) || ($_POST['gender'] != 0 && $_POST['gender'] != 1)) {
-    $error+="Gender is not set or is invalid\n";
+    $error=$error . "Gender is not set or is invalid\n";
 }
-print($error);
-header("HTTP/1.1 400 ");
-exit();
+if($error != ""){
+    print($error);
+    header("HTTP/1.1 400 " . $error);
+    exit();
+}
+
 $user = 'u53297';
 $pass = '1541109';
 // экземпляр класса PHP Data Objects для взаимодействия с бд
