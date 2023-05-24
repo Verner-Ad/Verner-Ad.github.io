@@ -12,14 +12,14 @@
             <label>
                 Имя:<br>
                 <input name="name"
-                  placeholder="Имя" required>
+                  placeholder="Имя">
               </label><br>
         
               <label>
                 E-mail:<br>
                 <input name="email"
                   type="email"
-                  placeholder="e-mail" required>
+                  placeholder="e-mail">
               </label><br>
         
               <label>
@@ -35,24 +35,24 @@
               
               Пол: <br>
               <label><input type="radio"
-                name="gender" value="0" required>
+                name="gender" value="0">
                 Мужской</label>
               <label><input type="radio"
-                name="gender" value="1" required>
+                name="gender" value="1">
                 Женский</label><br>
         
               Количество: <br>
               <label><input type="radio"
-                name="limbs" value="1" required>
+                name="limbs" value="1">
                 1</label>
               <label><input type="radio"
-                name="limbs" value="2" required>
+                name="limbs" value="2">
                 2</label>
               <label><input type="radio"
-                name="limbs" value="3" required>
+                name="limbs" value="3">
                 3</label>
               <label><input type="radio" checked
-                name="limbs" value="4" required>
+                name="limbs" value="4">
                 4</label><br>
         
             <label>
@@ -73,7 +73,7 @@
         
               Согласие c лицензионным соглашением:<br>
               <label><input type="checkbox"
-                name="check" required>
+                name="check">
                 Да</label><br>
         
               <input type="submit" value="Отправить">
