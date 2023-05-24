@@ -21,7 +21,8 @@ if (empty($_POST['limbs'])) {
 if (!isset($_POST['gender']) || ($_POST['gender'] != 0 && $_POST['gender'] != 1)) {
     error+="Gender is not set or is invalid\n";
 }
-header("HTTP/1.1 400 {$error}");
+print($error);
+header("HTTP/1.1 400 ");
 exit();
 $user = 'u53297';
 $pass = '1541109';
