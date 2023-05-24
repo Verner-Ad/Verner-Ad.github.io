@@ -1,32 +1,43 @@
 <?php
-
+string error ='';
 // теперь уже идет валидация посредством PHP
 // $_POST - один из суперглобальных массивов, инициализирован всегда
 if (empty($_POST['name'])) {
     // создаем HTTP header
-    header("HTTP/1.1 400 Name is not set");
+    if (error == '')
+    error+="Name is not set\n";
+    else
+    error+="HTTP/1.1 400 Name is not set\n";
     // exit() завершает выполнение скрипта
-    exit ();
 }
 // встроенная в php функция для валидации email
 if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-    header("HTTP/1.1 400 Mail is not set or is invalid");
-    exit ();
+    if (error == '')
+    error += "Mail is not set or is invalid\n";
+    else
+    error += "HTTP/1.1 400 Mail is not set or is invalid\n";
 }
 if (empty($_POST['year'])) {
-    header("HTTP/1.1 400 Year is not set");
-    exit ();
+    if (error == '')
+    error+="Year is not set\n";
+    else
+    error+="HTTP/1.1 400 Year is not set\n";
 }
 if (empty($_POST['limbs'])) {
-    header("HTTP/1.1 400 Limbs number is not set");
-   exit ();
+    if (error == '')
+    error+= "Limbs number is not set\n";
+    else
+    error+= "HTTP/1.1 400 Limbs number is not set\n";
 }
 // здесь применяем isset (проверка на NULL), т.к. empty выдаст true на '0', а у нас gender = {0, 1}
 if (!isset($_POST['gender']) || ($_POST['gender'] != 0 && $_POST['gender'] != 1)) {
-    header("HTTP/1.1 400 Gender is not set or is invalid");
-    exit ();
+    if (error == '')
+    error+="Gender is not set or is invalid\n";
+    else
+    error+="HTTP/1.1 400 Gender is not set or is invalid\n";
 }
-
+header(error);
+exit();
 $user = 'u53297';
 $pass = '1541109';
 // экземпляр класса PHP Data Objects для взаимодействия с бд
