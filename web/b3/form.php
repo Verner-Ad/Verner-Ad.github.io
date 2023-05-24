@@ -4,22 +4,22 @@ $error ="";
 // $_POST - один из суперглобальных массивов, инициализирован всегда
 if (empty($_POST['name'])) {
     // создаем HTTP header
-    $error=$error . "Name is not set\n";
+    $error=$error . "Name is not set, ";
     // exit() завершает выполнение скрипта
 }
 // встроенная в php функция для валидации email
 if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-       $error = $error . "Mail is not set or is invalid\n";
+       $error = $error . "Mail is not set or is invalid, ";
 }
 if (empty($_POST['year'])) {
-   $error=$error . "Year is not set\n";
+   $error=$error . "Year is not set, ";
 }
 if (empty($_POST['limbs'])) {
-   $error=$error . "Limbs number is not set\n";
+   $error=$error . "Limbs number is not set, ";
 }
 // здесь применяем isset (проверка на NULL), т.к. empty выдаст true на '0', а у нас gender = {0, 1}
 if (!isset($_POST['gender']) || ($_POST['gender'] != 0 && $_POST['gender'] != 1)) {
-    $error=$error . "Gender is not set or is invalid\n";
+    $error=$error . "Gender is not set or is invalid, ";
 }
 if($error != ""){
     print($error);
